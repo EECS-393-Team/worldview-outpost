@@ -8,7 +8,7 @@ venv/bin/activate: requirements.txt
 install_hooks: venv
 	venv/bin/pre-commit install
 
-.PHONY: test
+.PHONY: test clean
 test: venv
 	(. venv/bin/activate; \
 		coverage run venv/bin/pytest; \
@@ -17,3 +17,4 @@ test: venv
 
 clean:
 	rm -rf venv
+
