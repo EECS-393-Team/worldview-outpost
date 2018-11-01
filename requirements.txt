@@ -3,3 +3,4 @@ coverage
 flask
 pre-commit
 pytest
+requests

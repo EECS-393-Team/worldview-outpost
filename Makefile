@@ -8,11 +8,13 @@ venv/bin/activate: requirements.txt
 install_hooks: venv
 	venv/bin/pre-commit install
 
-.PHONY: test clean run
+.PHONY: test clean run install
 test: venv
 	@(. venv/bin/activate; \
+		pip install -e .;\
 		coverage run venv/bin/pytest; \
 		coverage report -m --fail-under 100 --omit=venv/*;\
+		rm -rf outpost.egg-info;\
 	)
 
 clean:
@@ -20,6 +22,6 @@ clean:
 
 run: venv
 	@(. venv/bin/activate;\
-		FLASK_APP=outpost/outpost.py;\
+		FLASK_APP=outpost;\
 		flask run;\
  	)
