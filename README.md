@@ -7,3 +7,7 @@ To develop for WorldView first run `make install_hooks` this will set up automat
 To run the development server run `make run`
 
 To run tests run `make test`
+
+
+## CI
+https://travis-ci.com/EECS-393-Team/worldview-outpost
