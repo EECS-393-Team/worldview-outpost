@@ -1,5 +1,4 @@
-# worldview-outpost
-[![Build Status](https://travis-ci.com/EECS-393-Team/worldview-outpost.svg?branch=master)](https://travis-ci.com/EECS-393-Team/worldview-outpost)
+# worldview-outpost [![Build Status](https://travis-ci.com/EECS-393-Team/worldview-outpost.svg?branch=master)](https://travis-ci.com/EECS-393-Team/worldview-outpost)
 Outposts are the nodes that run in different locations to provide Worldview with localized views of the queried sites.
 
 ## Development
