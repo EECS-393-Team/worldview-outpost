@@ -3,7 +3,7 @@ def get_dfanme_html():
     Helper function that gets test html from my personal website
     """
     f = open("tests/dfan.me.html", "r")
-    return f.read()
+    return f.read().strip()
 
 
 def test_fetch(client):
