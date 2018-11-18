@@ -22,6 +22,6 @@ clean:
 
 run: venv
 	@(. venv/bin/activate;\
-		FLASK_APP=outpost;\
+		export FLASK_APP=outpost;\
 		flask run;\
  	)
