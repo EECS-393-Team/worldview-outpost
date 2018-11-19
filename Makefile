@@ -22,6 +22,6 @@ clean:
 
 run: venv
 	@(. venv/bin/activate;\
-		export FLASK_APP=outpost;\
-		flask run;\
+		gunicorn --bind 0.0.0.0:8000 wsgi;\
  	)
+
