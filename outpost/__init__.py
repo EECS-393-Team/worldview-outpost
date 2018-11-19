@@ -30,4 +30,8 @@ def create_app():
         except requests.exceptions.RequestException:
             abort(400)
 
+    @app.route("/")
+    def index():
+        return "Outpost operational."
+
     return app
