@@ -1,6 +1,7 @@
 black
 coverage
 flask
+gunicorn
 pre-commit
 pytest
 requests
