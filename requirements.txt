@@ -2,6 +2,7 @@ black
 coverage
 flask
 Pillow
+gunicorn
 pre-commit
 pytest
 requests
