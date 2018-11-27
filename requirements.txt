@@ -1,6 +1,8 @@
 black
 coverage
 flask
+Pillow
 pre-commit
 pytest
 requests
+selenium
