@@ -30,3 +30,11 @@ def test_screenshot(client):
     """
     response = client.get("/screenshot/?url=dfan.me")
     assert response.data is not None
+
+
+def test_screenshot_fail(client):
+    """
+    Tests screenshot route using a bad url
+    """
+    response = client.get("/screenshot/")
+    assert response.status_code == 400
