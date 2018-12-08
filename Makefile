@@ -22,6 +22,6 @@ clean:
 
 run: venv
 	@(. venv/bin/activate;\
-		gunicorn --bind 0.0.0.0:8000 wsgi;\
+		gunicorn --bind 0.0.0.0:5000 wsgi;\
  	)
 
